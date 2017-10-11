@@ -1,0 +1,18 @@
+{
+  "name": "webpackvsrollupexample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:webpack": "webpack",
+    "build:rollup": "rollup -c",
+    "build": "npm run build:webpack && npm run build:rollup"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "rollup": "^0.50.0",
+    "webpack": "^3.7.0"
+  }
+}
