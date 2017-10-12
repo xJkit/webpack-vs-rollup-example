@@ -1,4 +1,8 @@
 import path from 'path';
+import resolve from 'rollup-plugin-node-resolve';
+import commonjs from 'rollup-plugin-commonjs'; // convert commonjs to ES6
+import filesize from 'rollup-plugin-filesize';
+
 import uglify from 'rollup-plugin-uglify';
 import { minify } from 'uglify-es';
 
@@ -19,6 +23,11 @@ export default {
     name: 'iifeBundle',
   }],
   plugins: [
+    filesize(),
+    resolve(),
+    commonjs({
+      include: 'node_modules/**',
+    }),
     uglify({}, minify),
   ],
 };
