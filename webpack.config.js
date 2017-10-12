@@ -6,6 +6,7 @@ module.exports = {
   output: {
     path: path.resolve('./dist'),
     filename: 'bundle.webpack.js',
+    chunkFilename: '[name].bundle.js',
   },
   module: {
     rules: [
