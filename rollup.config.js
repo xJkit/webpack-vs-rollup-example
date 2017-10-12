@@ -1,4 +1,6 @@
 import path from 'path';
+import uglify from 'rollup-plugin-uglify';
+import { minify } from 'uglify-es';
 
 export default {
   input: path.resolve('src/index.js'),
@@ -16,4 +18,7 @@ export default {
     format: 'iife',
     name: 'iifeBundle',
   }],
+  plugins: [
+    uglify({}, minify),
+  ],
 };
