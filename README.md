@@ -7,4 +7,4 @@ This project is a lighting talk about the comparison between Webpack and Rollup.
 3. Add image assets example
 4. Webpack code splitting & Dynamic import
 
-Slides: https://www.slideshare.net/JOEYCHUNG2/rollup-vs-webpack-shallow-compare-the-next-generation-es6-bundlers
+Slides: https://www.slideshare.net/JOEYCHUNG2/rollup-vs-webpack-shallow-compare-the-next-generation-es6-bundlers-80745237
