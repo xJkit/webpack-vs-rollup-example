@@ -7,6 +7,19 @@ module.exports = {
     path: path.resolve('./dist'),
     filename: 'bundle.webpack.js',
   },
+  module: {
+    rules: [
+      {
+        test: /\.(png|jpg|jpeg|gif)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {}
+          }
+        ]
+      }
+    ]
+  },
   plugins: [
     // new webpack.optimize.UglifyJsPlugin(),
   ],
